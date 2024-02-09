@@ -1,0 +1,38 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tan;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20vh, 1fr)); /* Adjust minmax values */
+  grid-gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.item {
+  position: relative;
+  width: 100%;
+  padding-top: 90%; /* Adjust padding-top to make the cards smaller */
+  background-color: white;
+  cursor: pointer;
+}
+
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+h2 {
+  text-align: center;
+}
